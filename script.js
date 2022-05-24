@@ -35,7 +35,6 @@ function updateOccupiedSeats() {
   console.log(occupiedSeats);
   seats.forEach((seat) => {
     seat.classList.replace('selected', 'occupied');
-    //seat.classList.add('saloon' + JSON.parse(localStorage.getItem('selectedMovieIndex')));/////////
     const occupiedSeatsIndex = [...occupiedSeats].map(seat => {
       return [...seats].indexOf(seat);
     });
